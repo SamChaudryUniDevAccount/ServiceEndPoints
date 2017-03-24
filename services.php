@@ -5,6 +5,10 @@ if (isset($_POST["points"])) {
 
     $points = json_decode($_POST["points"]);
 
+
+    echo $_POST['points'];
+
+
     // Access our object's data and array values.
 
     echo "Data is: " . $points->data . "<br>";
