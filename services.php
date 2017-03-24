@@ -5,10 +5,11 @@ if (isset($_POST["points"])) {
     //Pulling
     $points = json_decode($_POST["points"]);
 
+    //You can for loop through this and grab the values by key value pairs and get what you want
     echo $_POST['points'];
 
     //For loop through the points
-    echo ($points);
+    echo ("Data returned from ther server is".$points);
 
     // Access our object's data and array values.
     //Extract values and write to variables
