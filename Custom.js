@@ -21,18 +21,7 @@ $("#postData").click(function(){
         jsonObject[inputDataArray[i]['name']] = inputDataArray[i]['value'];
 
     }
-
-
-     var jsonObject = {};
-
-     var inputDataArray = ($(".inputData").serializeArray());
-
-     for (var i = 0; i < inputDataArray.length; i++){
-
-     jsonObject[inputDataArray[i]['name']] = inputDataArray[i]['value'];
-
-     }
-
+    
 
      var data = JSON.stringify(jsonObject);
 
