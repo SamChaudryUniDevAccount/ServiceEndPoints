@@ -19,7 +19,7 @@ if (isset($_POST["points"])) {
 
 
 
-    echo print_r($data);
+    //echo print_r($data);
 
 
 
