@@ -18,6 +18,6 @@ if (isset($_POST["update"])) {
     //Extract values and write to variables
 
     $value = json_decode(stripslashes($_POST), true);
-    echo $value['cop'];
+    echo $value->cop;
 
 }
