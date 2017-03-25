@@ -3,7 +3,8 @@ if (isset($_POST["points"])) {
 
     //Cast into array and is working!!!
 
-     $obj = json_decode($_POST["points"]);
+     //Crate assoctiative array
+     $obj = json_decode($_POST["points"],true);
      echo "First value..".$obj['cop'];
 
 
