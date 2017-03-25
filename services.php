@@ -12,7 +12,7 @@ if (isset($_POST["points"])) {
 
     $arr = json_decode($data["points"], true);
 
-    echo "Values echoed are". $String = $arr['points']['cop'];
+    echo "Values echoed are". $String = $arr[0];
 
 
 
