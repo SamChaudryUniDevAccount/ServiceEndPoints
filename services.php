@@ -10,7 +10,11 @@ if (isset($_POST["points"])) {
 
     $data = array(json_decode($json));
 
-    echo "" .$data->cop;
+    foreach ($toppings as $data) {
+
+        echo $topping, "\n";
+
+    }
 
 
    // {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
