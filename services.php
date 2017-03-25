@@ -6,13 +6,9 @@ if (isset($_POST["points"])) {
 
     foreach ($array as $k=>$v){
 
-        //echo "".$k.$v;
+        echo "Keys are..".$k. "Values are...".$v;
 
-        if($k == "cop"){
-
-            echo $v;
-        }
-
+        
     }
 
 
