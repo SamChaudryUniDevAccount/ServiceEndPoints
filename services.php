@@ -12,10 +12,12 @@ if (isset($_POST["points"])) {
 
     foreach ($toppings as $data) {
 
-        echo $topping, "\n";
+
 
     }
 
+
+    echo $topping, "\n";
 
    // {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
