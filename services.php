@@ -10,6 +10,6 @@ if (isset($_POST["update"])) {
 
     $points = json_decode($String,true);
 
-     echo print_r(json_decode($point));
+     echo print_r(json_decode($points));
 
 }
