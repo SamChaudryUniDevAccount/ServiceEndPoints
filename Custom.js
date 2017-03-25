@@ -23,14 +23,14 @@ $("#postData").click(function(){
 
     }
     
-
+     //{'action': 'follow', 'userid': '11239528343'}
      var data = JSON.stringify(jsonObject);
     
     $.ajax({
 
         url: 'services.php',
         type: 'post',
-        data: {"points" :  JSON.stringify(data)},
+        data: {'action': 'follow', 'userid': '11239528343'},
         success: function(data) {
 
         // Do something with data that came back.
