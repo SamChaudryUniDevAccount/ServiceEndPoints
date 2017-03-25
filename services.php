@@ -1,12 +1,18 @@
 <?php
 if (isset($_POST["points"])) {
 
-    //Cast into array and is working!!!
 
      //Crate assoctiative array
      $obj = json_decode($_POST["points"]);
 
-     echo $obj-> cop;
+
+      $jsonData = stripslashes(html_entity_decode($_POST["points"]));
+
+      $k=json_decode($jsonData,true);
+
+        echo $k->cop;
+
+
 
     //$array = (array)json_decode($_POST["points"],true);
 
