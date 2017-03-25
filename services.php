@@ -2,10 +2,10 @@
 if (isset($_POST["points"])) {
 
 
-    $Points = json_decode($_POST["points"]);
+    $points = json_decode($_POST["points"]);
 
     //Points object shows {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
-    echo $Points;
+    echo $points->{'cop'};
 
     //Hard coded version -> Works on decode
 
@@ -15,7 +15,7 @@ if (isset($_POST["points"])) {
 
     //$copName = json_decode($json);
 
-    //echo $copName->cop; echos John Maclane
+    //echo $copName->cop; echos John Mclane
 
 
 
