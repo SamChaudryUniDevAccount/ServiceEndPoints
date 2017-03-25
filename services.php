@@ -11,15 +11,7 @@ if (isset($_POST["points"])) {
     //Array
     $data = array(json_decode($json,true));
 
-    foreach ($data[0] as $key => $value) {
-
-        print_r ("$key => $value\n");
-
-    }
-
-
-
-    //echo print_r($data);
+    echo print_r($data);
 
 
 
