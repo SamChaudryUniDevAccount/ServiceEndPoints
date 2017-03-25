@@ -3,7 +3,7 @@ if (isset($_POST["points"])) {
 
      $json = json_decode($_POST["points"]);
 
-     $copName = $json -> cop;
+     $copName = $json["points"] -> cop;
 
      echo $copName->cop;
 
