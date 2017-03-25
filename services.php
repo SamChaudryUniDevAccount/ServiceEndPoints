@@ -6,7 +6,7 @@ if (isset($_POST["points"])) {
 
     //Object values
     //Points object shows {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
-    echo $Points-> {'cop'};
+    echo json_decode($Points);
 
     //Hard coded version -> Works on decode
 
