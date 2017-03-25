@@ -32,18 +32,14 @@ $("#postData").click(function(){
      //Data structure
     //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
-    var postArray = new Array();
 
-    postArray.push(jsonObject);
-    
-    alert(postArray);
 
 
     $.ajax({
 
         url: 'services.php',
         type: 'post',
-        data: {"points" : JSON.stringify(postArray)},
+        data: {"points" : JSON.stringify(data)},
         success: function(data) {
 
         // Do something with data that came back.
