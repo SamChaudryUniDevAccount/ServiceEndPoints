@@ -13,7 +13,7 @@ if (isset($_POST["points"])) {
 
    // $array = array('key1' => 'value1', 'key2' => 'value2');
 
-    foreach($points['points'] as $review){
+    foreach($points["points"] as $review){
         echo $review['points'];
     }
 
