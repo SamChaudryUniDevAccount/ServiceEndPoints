@@ -14,7 +14,7 @@ if (isset($_POST["points"])) {
     // Access our object's data and array values.
     //Extract values and write to variables
 
-    foreach(point as $key => $value)
+    foreach($points as $key => $value)
     {
         if (strstr($key, 'cop'))
         {
