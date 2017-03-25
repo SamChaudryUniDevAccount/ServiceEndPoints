@@ -2,12 +2,9 @@
 if (isset($_POST["points"])) {
 
      // echos {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
-    $json = json_decode($_POST["points"]);
-
-
-     echo json;
-
-
+    $Points = json_decode($_POST["points"]);
+    
+     echo $Points;
 
 
     //Hard coded version -> Works on decode
