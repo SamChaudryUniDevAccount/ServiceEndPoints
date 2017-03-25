@@ -2,7 +2,7 @@
 if (isset($_POST["points"])) {
 
 
-  echo $data = json_decode($_POST["points"],true)->cop;
+  echo $data = json_decode($_POST["points"]);
 
 
 
