@@ -1,12 +1,12 @@
 <?php
 
-header('Content-type: application/json;');
+
 
 if (isset($_POST["points"])) {
 
     //data is an array
 
-    $json = (stripslashes($_POST["points"]));
+    $json = ($_POST["points"]);
 
     $data = json_decode($json);
 
