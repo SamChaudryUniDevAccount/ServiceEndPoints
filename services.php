@@ -3,7 +3,7 @@ if (isset($_POST["points"])) {
 
     //data is an array
 
-    $data = json_decode($_POST["points"], true); // return array not object
+    $data = json_decode($_POST["points"]); // return array not object
 
     echo $data["cop"];
 
