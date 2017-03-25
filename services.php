@@ -8,16 +8,16 @@ if (isset($_POST["points"])) {
     //You can for loop through this and grab the values by key value pairs and get what you want
     //$data =  $_POST['points'];
 
-    //For loop through the points
-     echo ("".$jsondecoded);
+    //Working
+     echo ("".$jsondecoded["points"]["cop"]);
 
 
-    $obj = json_decode($_POST["points"], TRUE);
+   // $obj = json_decode($_POST["points"], TRUE);
 
-    foreach($obj['points'] as  $key => $value){
+  //  foreach($obj['points'] as  $key => $value){
 
-        echo "Key: $key; Value: $value<br />\n";
-    }
+     //   echo "Key: $key; Value: $value<br />\n";
+   // }
 
 
     // Access our object's data and array values.
