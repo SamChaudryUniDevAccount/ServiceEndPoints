@@ -2,10 +2,23 @@
 if (isset($_POST["points"])) {
 
 
-     //Crate assoctiative array
-     $obj = json_decode($_POST["points"]);
 
-     echo $obj;
+    $postedData = $_POST["points"];
+    $tempData = str_replace("\\", "",$postedData);
+    $cleanData = json_decode($tempData);
+    echo($cleanData);
+
+
+    
+
+
+
+
+
+     //Crate assoctiative array
+    // $obj = json_decode($_POST["points"]);
+
+    // echo $obj;
 
 
 
