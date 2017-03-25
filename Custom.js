@@ -26,7 +26,7 @@ $("#postData").click(function(){
 
      var data = JSON.stringify(jsonObject);
 
-    var JSONstr = encodeURIComponent(JSON.stringify(fullInfoArray));
+      var JSONstr = encodeURIComponent(JSON.stringify(data));
 
     $.ajax({
 
