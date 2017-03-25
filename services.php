@@ -9,7 +9,13 @@ if (isset($_POST["points"])) {
     $json = ($_POST["points"]);
 
     //Array
-    $data = array(json_decode($json,true));
+    $data = json_decode($json,true);
+
+
+
+
+
+
 
     echo print_r($data);
 
