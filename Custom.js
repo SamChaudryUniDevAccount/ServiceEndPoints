@@ -25,14 +25,12 @@ $("#postData").click(function(){
     
 
      var data = JSON.stringify(jsonObject);
-
-      var JSONstr = encodeURIComponent(JSON.stringify(data));
-
+    
     $.ajax({
 
         url: 'services.php',
         type: 'post',
-        data: {"points" :  JSON.stringify(JSONstr)},
+        data: {"points" :  JSON.stringify(data)},
         success: function(data) {
 
         // Do something with data that came back.
