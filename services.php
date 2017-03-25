@@ -17,14 +17,13 @@ if (isset($_POST["points"])) {
 
     $data = json_decode($_POST["points"]);
 
-    //echo $data["points"]["cop"];
     echo $data["cop"]->cop;
 
 
-    
+
     $json = '
 {
-    Key      value
+   
     "type": "donut",
     "name": "Cake"
 }';
