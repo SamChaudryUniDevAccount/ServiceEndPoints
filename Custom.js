@@ -13,6 +13,7 @@ $( document ).ready(function() {
 $("#postData").click(function(){
 
     var jsonObject = {};
+    var postArray = [];
 
     var inputDataArray = ($(".inputData").serializeArray());
 
@@ -25,17 +26,22 @@ $("#postData").click(function(){
 
      var data = JSON.stringify(jsonObject);
 
-     alert(data);
-     console.log(data);
+     //alert(data);
+     //console.log(data);
 
      //Data structure
     //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
+
+    postArray.append(jsonObject);
+
+    alert(postArray); 
+
 
     $.ajax({
 
         url: 'services.php',
         type: 'post',
-        data: {"points" : JSON.stringify(data)},
+        data: {"points" : JSON.stringify(postArray)},
         success: function(data) {
 
         // Do something with data that came back.
