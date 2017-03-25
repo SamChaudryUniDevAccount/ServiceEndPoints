@@ -9,15 +9,12 @@ if (isset($_POST["points"])) {
     //$data =  $_POST['points'];
 
     //For loop through the points
-     echo ("".$points);
+    // echo ("".$points);
 
    // $array = array('key1' => 'value1', 'key2' => 'value2');
 
-    $keys = array_keys($points);
-
-    for($i=0; $i < count($points); ++$i) {
-
-        echo $keys[$i] . ' ' . $array[$keys[$i]] . "\n";
+    foreach($points['points'] as $review){
+        echo $review['points'];
     }
 
 
