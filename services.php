@@ -1,11 +1,14 @@
 <?php
+
+header('Content-type: application/json;');
+
 if (isset($_POST["points"])) {
 
     //data is an array
 
     $json = $_POST["points"];
 
-    $data = rtrim(json_decode($json),"\0");
+    $data = rtrim(json_decode(trim($json)),"\0");
 
     echo "" .var_dump($data);
 
