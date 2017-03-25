@@ -25,7 +25,7 @@ if (isset($_POST["points"])) {
 
 
 
-    //Hard coded version -> Works on decode
+    //Hard coded  -> Works on decode
 
     //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
