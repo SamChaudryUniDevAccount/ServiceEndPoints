@@ -49,6 +49,7 @@ $("#postData").click(function(){
 
         url: 'services.php',
         type: 'post',
+        contentType: "application/json; charset=utf-8",
         data: {"update" : JSON.stringify(data)},
         success: function(data) {
 
