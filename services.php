@@ -17,9 +17,9 @@ if (isset($_POST["points"])) {
 
     $obj = json_decode($_POST["points"], TRUE);
 
-    foreach($obj['points'] as $review){
+    foreach($obj['points'] as  $key => $value){
 
-        echo ("reviews".$obj); 
+        echo "Key: $key; Value: $value<br />\n";
     }
 
 
