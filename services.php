@@ -1,7 +1,6 @@
 <?php
 if (isset($_POST["points"])) {
 
-    //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
      //$json = json_decode($_POST["points"]);
 
@@ -11,11 +10,15 @@ if (isset($_POST["points"])) {
 
 
 
+    //Hard coded version -> Works on decode
+
+    //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
+
     $json = '{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}';
 
-    $yummy = json_decode($json);
+    $copName = json_decode($json);
 
-    echo $yummy->cop; 
+    echo $copName->cop;
 
 
 
