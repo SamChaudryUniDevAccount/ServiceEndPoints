@@ -34,7 +34,9 @@ $("#postData").click(function(){
 
     postArray.append(jsonObject);
 
-    alert(postArray); 
+    alert("Modifcations"); 
+
+    alert(postArray);
 
 
     $.ajax({
