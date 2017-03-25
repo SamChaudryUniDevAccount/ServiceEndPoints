@@ -8,9 +8,14 @@ if (isset($_POST["points"])) {
 
       $jsonData = stripslashes(html_entity_decode($_POST["points"]));
 
-      $k=json_decode($jsonData,true);
+      $array= (array)json_decode($jsonData,true);
 
-        echo $k->cop;
+      foreach ($array as $k=>$v){
+
+        echo "Keys are..".$k. "Values are...".$v;
+
+
+     }
 
 
 
