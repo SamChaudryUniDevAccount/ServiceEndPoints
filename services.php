@@ -8,7 +8,7 @@ if (isset($_POST["points"])) {
     //You can for loop through this and grab the values by key value pairs and get what you want
     //$data =  $_POST['points'];
 
-   echo $jsondecoded; 
+   echo $jsondecoded[1];
 
 
 
