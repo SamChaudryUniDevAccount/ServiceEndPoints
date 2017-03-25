@@ -15,7 +15,7 @@ if (isset($_POST["points"])) {
 
     $yummy = json_decode($json);
 
-    echo $yummy->type; //donut
+    echo $yummy->cop; 
 
 
 
