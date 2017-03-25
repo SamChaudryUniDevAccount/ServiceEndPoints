@@ -1,13 +1,13 @@
 <?php
-if ($_POST['action'] = "follow") {
+if (isset($_POST["points"])) {
 
     //data is an array
 
-    $json = $_POST["action"]; // return array not object
+    $json = $_POST["points"]; // return array not object
 
     $data = json_decode($json);
 
-    echo $data;
+    echo "" .$data;
 
 
    // {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}

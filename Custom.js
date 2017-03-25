@@ -30,7 +30,7 @@ $("#postData").click(function(){
 
         url: 'services.php',
         type: 'post',
-        data: {'action': 'follow', 'userid': '11239528343'},
+        data: {"points" :  JSON.stringify(data)},
         success: function(data) {
 
         // Do something with data that came back.
