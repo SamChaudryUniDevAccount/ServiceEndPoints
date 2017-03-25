@@ -4,8 +4,9 @@ if (isset($_POST["points"])) {
     //Cast into array and is working!!!
 
      //Crate assoctiative array
-     echo json_decode($_POST["points"],true);
+     $obj = json_decode($_POST["points"]);
 
+     echo $obj-> cop;
 
     //$array = (array)json_decode($_POST["points"],true);
 
@@ -34,7 +35,7 @@ if (isset($_POST["points"])) {
 
     //echo $copName->cop; echos John Mclane
 
-    // Shows {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
+
 
 
 }
