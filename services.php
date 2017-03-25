@@ -1,12 +1,31 @@
 <?php
 if (isset($_POST["points"])) {
 
-    // Decode our JSON into PHP objects we can use
+    //data is an array
 
-    $points = json_decode($_POST["points"]);
+    $data = json_decode($_POST["points"]); // return array not object
 
-    // Access our object's data and array values.
+    echo $data->cop;
 
 
-    //Extract values and write to variables
+
+
+
+
+
+
+
+    //Hard coded  -> Works on decode
+
+    //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
+
+   // $json = '{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}';
+
+    //$copName = json_decode($json);
+
+    //echo $copName->cop; echos John Mclane
+
+
+
+
 }
