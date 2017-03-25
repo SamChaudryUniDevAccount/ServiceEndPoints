@@ -8,7 +8,7 @@ if (isset($_POST["points"])) {
 
         //echo "".$k.$v;
 
-        if($key == "cop"){
+        if($k == "cop"){
 
             echo $v;
         }
