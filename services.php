@@ -9,7 +9,7 @@ if (isset($_POST["points"])) {
     //$data =  $_POST['points'];
 
     //For loop through the points
-     //echo ("".$points);
+     echo ("".$points);
 
 
     $obj = json_decode($_POST["points"], TRUE);
