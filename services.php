@@ -1,10 +1,10 @@
 <?php
 if (isset($_POST["points"])) {
 
-
+    //Cast into array and is working!!!
     $array =(array)json_decode($_POST["points"],true);
 
-    // Shows {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
+
 
     foreach ($array as $k=>$v){
 
@@ -28,6 +28,7 @@ if (isset($_POST["points"])) {
 
     //echo $copName->cop; echos John Mclane
 
+    // Shows {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
 
 }
