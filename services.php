@@ -8,7 +8,7 @@ if (isset($_POST["update"])) {
 
 
 
-    $points = json_decode($String,true);
+    $points = json_decode($_POST['update'],true);
 
      echo $points;
 
