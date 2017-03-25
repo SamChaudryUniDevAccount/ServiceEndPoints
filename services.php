@@ -11,12 +11,12 @@ if (isset($_POST["points"])) {
     //For loop through the points
   //  echo ("".$points);
 
-    foreach($points as $obj){
 
-        echo $obj->name;
 
+    foreach($points as $key => $value)
+    {
+        echo 'Your key is: '.$key.' and the value of the key is:'.$value;
     }
-
 
     // Access our object's data and array values.
     //Extract values and write to variables
