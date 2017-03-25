@@ -13,7 +13,7 @@ $( document ).ready(function() {
 $("#postData").click(function(){
 
     var jsonObject = {};
-    var postArray = [];
+
 
     var inputDataArray = ($(".inputData").serializeArray());
 
@@ -32,10 +32,10 @@ $("#postData").click(function(){
      //Data structure
     //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
-    postArray.append(jsonObject);
+    var postArray = new Array();
 
-    alert("Modifcations"); 
-
+    postArray.push(jsonObject);
+    
     alert(postArray);
 
 
