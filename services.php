@@ -15,7 +15,7 @@ if (isset($_POST["points"])) {
 
     $copName = json_decode($json);
 
-    echo $copName->cop;
+    echo $copName->cop." "." ".$copName->airman;
 
 
 
