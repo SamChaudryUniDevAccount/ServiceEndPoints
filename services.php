@@ -8,12 +8,12 @@ if (isset($_POST["update"])) {
     // Access  object's data and array values.
 
 
-    foreach($points as $key => $value){
+    for ($row = 0; $row < sizeof($points); $row++) {
 
-        $credentials[$key] = $value;
 
-    };
-    echo print_r($credentials);
+        echo $points[$row]['cop'];
+
+    }
 
     //Extract values and write to variables
 }
