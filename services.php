@@ -6,10 +6,10 @@ if (isset($_POST["update"])) {
     ///{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
 
-    $String = stripslashes($_POST["points"]);
+
 
     $points = json_decode($String,true);
 
-     echo print_r(json_decode($points));
+     echo $points;
 
 }
