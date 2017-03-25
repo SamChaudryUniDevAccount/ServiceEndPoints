@@ -1,21 +1,22 @@
 <?php
 if (isset($_POST["points"])) {
 
+    //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
-  echo $data = json_decode($_POST["points"]);
+     //$json = json_decode($_POST["points"]);
 
-    $cop =  $data->{"cop"};
+     //$cop =  $json["points"]["cop"]->cop;
+
+     //echo $cop;
 
 
 
-/*
-    $json = '{"type": "donut",
-    "name": "Cake"}';
+    $json = '{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}';
 
     $yummy = json_decode($json);
 
     echo $yummy->type; //donut
-*/
+
 
 
 
