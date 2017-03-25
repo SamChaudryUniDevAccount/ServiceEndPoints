@@ -7,13 +7,9 @@ if (isset($_POST["update"])) {
 
     // Access  object's data and array values.
 
+    $title = $points->cop;
 
-    for ($row = 0; $row < sizeof($points); $row++) {
-
-
-        echo $points[$row]['cop'];
-
-    }
+    echo $title;
 
     //Extract values and write to variables
 }
