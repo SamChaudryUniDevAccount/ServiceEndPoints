@@ -15,11 +15,6 @@ if (isset($_POST["points"])) {
     //echo "Values echoed are". $String = $arr[0];
 
 
-    $data = json_decode($_POST["points"]);
-
-    echo $data["cop"]->cop;
-
-
 
     $json = '
 {
