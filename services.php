@@ -31,7 +31,7 @@ if (isset($_POST["points"])) {
     $data = json_decode($_POST["points"]);
 
     //echo $data["points"]["cop"];
-    echo $data["points"]["cop"]->cop;
+    echo $data["cop"]->cop;
 
 
 }
