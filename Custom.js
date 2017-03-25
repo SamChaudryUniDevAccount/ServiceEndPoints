@@ -40,7 +40,7 @@ $("#postData").click(function(){
     // console.log(data);
 
 
-    jQuery.post("services.php", dataToSend, function(data){ alert(data); });
+    jQuery.post("services.php", data, function(data){ alert(data); });
 
 
 
