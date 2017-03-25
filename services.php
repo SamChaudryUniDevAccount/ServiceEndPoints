@@ -1,16 +1,19 @@
 <?php
-if (isset($_POST["points"])) {
+if (isset($_POST["update"])) {
 
     // Decode our JSON into PHP objects we can use
 
     $points = json_decode($_POST["points"]);
 
-    // Access our object's data and array values.
+    // Access  object's data and array values.
 
-    echo "Data is: " . $points->data . "<br>";
 
-    echo "Values" . $points->arPoints[0]->x . ", " . $points->arPoints[0]->y;
+    foreach($points as $key => $value){
 
+        $credentials[$key] = $value;
+
+    };
+    echo print_r($credentials);
 
     //Extract values and write to variables
 }

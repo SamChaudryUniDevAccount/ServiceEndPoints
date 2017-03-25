@@ -46,7 +46,7 @@ $("#postData").click(function(){
 
         url: 'services.php',
         type: 'post',
-        data: {"points" : JSON.stringify(data)},
+        data: {"update" : JSON.stringify(data)},
         success: function(data) {
 
         // Do something with data that came back.
