@@ -12,7 +12,7 @@ if (isset($_POST["points"])) {
 
     $arr = json_decode($data["points"], true);
 
-    foreach ($arr as $k=>$v){
+    foreach ($arr["points"] as $k=>$v){
 
         echo $v; // etc.
 
