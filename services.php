@@ -5,7 +5,7 @@ if (isset($_POST["points"])) {
 
      //Crate assoctiative array
      $obj = json_decode($_POST["points"],true);
-     echo "First value..".$obj['cop'];
+     echo "First value..".$obj[1]['cop'];
 
 
 
