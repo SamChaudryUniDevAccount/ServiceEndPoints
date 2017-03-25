@@ -14,7 +14,7 @@ if (isset($_POST["points"])) {
    // $array = array('key1' => 'value1', 'key2' => 'value2');
 
 
-    $obj = json_decode($data, TRUE);
+    $obj = json_decode($_POST["points"], TRUE);
     for($i=0; $i<count($obj['points']); $i++) {
 
         echo $obj['points'][i];
