@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST["update"])) {
+if (isset($_POST["points"])) {
 
     // Decode our JSON into PHP objects we can use
     // Decode our JSON into PHP objects we can use
@@ -8,7 +8,7 @@ if (isset($_POST["update"])) {
 
 
 
-    $points = json_decode($_POST['update'],true);
+    $points = json_decode($_POST["points"],true);
 
      echo $points;
 
