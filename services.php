@@ -15,7 +15,13 @@ if (isset($_POST["points"])) {
     //echo "Values echoed are". $String = $arr[0];
 
 
-    /* Extract data from this and donut works
+    $data = json_decode($_POST["points"]);
+
+    //echo $data["points"]["cop"];
+    echo $data["cop"]->cop;
+
+
+    
     $json = '
 {
     Key      value
@@ -26,12 +32,9 @@ if (isset($_POST["points"])) {
     $yummy = json_decode($json);
 
     echo $yummy->type; //donut
-*/
 
-    $data = json_decode($_POST["points"]);
 
-    //echo $data["points"]["cop"];
-    echo $data["cop"]->cop;
+
 
 
 }
