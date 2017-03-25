@@ -1,18 +1,11 @@
 <?php
 if (isset($_POST["points"])) {
 
-    //$cleanData = json_decode($_POST["points"]);
-
-    //echo $cleanData;
+    //data is an array
 
     $data = json_decode($_POST["points"], true); // return array not object
 
-    foreach($data['points'] as $key => $customer) {
-     
-        echo $customer['cop'];
-
-    }
-
+    echo $data[0]["cop"];
 
 
 
