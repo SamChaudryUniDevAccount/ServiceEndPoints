@@ -7,10 +7,6 @@ if (isset($_POST["points"])) {
 
     // Access our object's data and array values.
 
-    echo "Data is: " . $points->data . "<br>";
-
-    echo "Values" . $points->arPoints[0]->x . ", " . $points->arPoints[0]->y;
-
 
     //Extract values and write to variables
 }
