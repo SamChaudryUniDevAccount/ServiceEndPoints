@@ -4,7 +4,7 @@ if (isset($_POST["points"])) {
     //Cast into array and is working!!!
 
      $obj = json_decode($_POST["points"]);
-     echo "First value..".$obj->cop;
+     echo "First value..".$obj['cop'];
 
 
 
