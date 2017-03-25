@@ -2,13 +2,10 @@
 if (isset($_POST["points"])) {
 
 
-
-    $postedData = $_POST["points"];
-    $tempData = str_replace("\\", "",$postedData);
+    $tempData = html_entity_decode($_POST["points"]);
     $cleanData = json_decode($tempData);
-    echo $cleanData->cop;
 
-
+    echo $cleanData->cop; 
 
 
 
