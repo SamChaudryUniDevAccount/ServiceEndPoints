@@ -11,9 +11,9 @@ if (isset($_POST["points"])) {
     //For loop through the points
   //  echo ("".$points);
 
-    $array = array('key1' => 'value1', 'key2' => 'value2');
+   // $array = array('key1' => 'value1', 'key2' => 'value2');
 
-    $keys = array_keys($array);
+    $keys = array_keys($points);
 
     for($i=0; $i < count($keys); ++$i) {
 
