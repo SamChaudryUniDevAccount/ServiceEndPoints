@@ -7,7 +7,7 @@ if (isset($_POST["points"])) {
 
     $data = json_decode($json);
 
-    echo $data->cop;
+    echo "Data elements returned";
 
 
 
