@@ -2,15 +2,15 @@
 if (isset($_POST["points"])) {
 
 
-    $pointsArray = json_decode($_POST["points"],true);
+    $array =(array)json_decode($_POST["points"],true);
 
-    //Points object shows {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
+    // Shows {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
-    $key = "cop";
+    foreach ($array as $k=>$v){
 
-    $bestMovieCop = $pointsArray[$key];
+        echo "".$k.$v;
 
-    echo "Best movie cop is".$bestMovieCop;
+    }
 
 
 
