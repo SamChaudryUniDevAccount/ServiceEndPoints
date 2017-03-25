@@ -32,7 +32,7 @@ $("#postData").click(function(){
 
         url: 'services.php',
         type: 'post',
-        data: {"points" :  JSONstr},
+        data: {"points" :  JSON.stringify(JSONstr)},
         success: function(data) {
 
         // Do something with data that came back.
