@@ -11,7 +11,7 @@ if (isset($_POST["points"])) {
 
    // {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
-    $json = $_POST["points"];
+    $json = '{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}';
 
     $copName = json_decode($json);
 
