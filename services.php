@@ -7,7 +7,7 @@ if (isset($_POST["update"])) {
 
     // Access  object's data and array values.
 
-    $title = $points->points->cop;
+    $title = $points->cop;
 
     echo $title;
 
