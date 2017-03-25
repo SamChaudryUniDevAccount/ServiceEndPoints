@@ -1,17 +1,19 @@
 <?php
 if (isset($_POST["points"])) {
 
-    $cleanData = json_decode($_POST["points"]);
+    //$cleanData = json_decode($_POST["points"]);
 
-    echo $cleanData;
+    //echo $cleanData;
+
+    $data = json_decode($_POST["points"], true); // return array not object
+
+    foreach($data['points'] as $key => $customer) {
+     
+        echo $customer['cop'];
+
+    }
 
 
-
-
-     //Crate assoctiative array
-    // $obj = json_decode($_POST["points"]);
-
-    // echo $obj;
 
 
 
