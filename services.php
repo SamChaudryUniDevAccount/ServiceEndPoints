@@ -2,8 +2,7 @@
 if (isset($_POST["points"])) {
 
 
-    $tempData = html_entity_decode($_POST["points"]);
-    $cleanData = json_decode($tempData);
+    $cleanData = json_decode($_POST["points"]);
 
     echo $cleanData;
 
