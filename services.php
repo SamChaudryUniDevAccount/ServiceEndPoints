@@ -4,7 +4,7 @@ if (isset($_POST["update"])) {
     // Decode our JSON into PHP objects we can use
     // Decode our JSON into PHP objects we can use
 
-    $points = json_decode($_POST["points"]);
+    $points = json_decode($_POST["points"],true);
 
      echo $points-> cop;
 
