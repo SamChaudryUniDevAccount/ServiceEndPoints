@@ -40,16 +40,11 @@ $("#postData").click(function(){
     // console.log(data);
 
 
-    jQuery.post("services.php", data, function(data){ alert(data); });
-
-
-
-
 
      //Data structure
     //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
-    /*
+
     $.ajax({
 
         url: 'services.php',
@@ -64,7 +59,6 @@ $("#postData").click(function(){
     }
 
 });
-*/
 
 
 });
