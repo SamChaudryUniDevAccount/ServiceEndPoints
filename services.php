@@ -9,11 +9,6 @@ if (isset($_POST["points"])) {
 
     echo "Data elements returned" .$data->cop;
 
-
-
-
-
-
     //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
    // $json = '{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}';
