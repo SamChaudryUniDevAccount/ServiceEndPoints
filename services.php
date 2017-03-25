@@ -15,11 +15,13 @@ if (isset($_POST["points"])) {
     //Extract values and write to variables
 
 
-    foreach ($data as $key => $value) {
+    foreach ($_POST['points'] as $key => $value) {
 
         echo "Key is..".$key. "Value is".$value;
 
 
     }
+
+    echo "Key is..".$key. "Value is".$value;
 
 }
