@@ -9,7 +9,7 @@ if (isset($_POST["points"])) {
     $data =  $_POST['points'];
 
     //For loop through the points
-    echo ("Data returned from ther server is".$points);
+    echo ("".$points);
 
     // Access our object's data and array values.
     //Extract values and write to variables
