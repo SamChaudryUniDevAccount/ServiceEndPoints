@@ -2,7 +2,7 @@
 if (isset($_POST["points"])) {
 
     //Cast into array and is working!!!
-    $array = json_decode($_POST["points"],true);
+    $array = (array)json_decode($_POST["points"],true);
 
     foreach ($array as $k=>$v){
 
