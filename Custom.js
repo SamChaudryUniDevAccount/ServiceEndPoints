@@ -41,7 +41,7 @@ $("#postData").click(function(){
 
 
 
-     //Data structure
+
     //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
 
