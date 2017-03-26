@@ -49,7 +49,7 @@ $("#postData").click(function(){
 
         url: 'services.php',
         type: 'post',
-        contentType: "application/json; charset=utf-8",
+        contentType: "application/json",
         data: {"points" : JSON.stringify(data)},
         success: function(data) {
 
