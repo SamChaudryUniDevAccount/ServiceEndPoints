@@ -48,7 +48,7 @@ $("#postData").click(function(){
     $.ajax({
 
         url: 'services.php',
-        type: 'post',
+        type: 'POST',
         data: {"points" : JSON.stringify(data)},
         success: function(data) {
 
