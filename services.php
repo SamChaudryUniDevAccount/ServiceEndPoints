@@ -7,6 +7,9 @@ if (isset($_POST["points"])) {
     $points = json_decode($_POST["points"],true);
 
     $stringJSON = $_POST["points"];
+
+    header('Content-Type: application/json');
+
     $stringObject = json_decode(stripslashes($stringJSON));
 
      echo $points;
