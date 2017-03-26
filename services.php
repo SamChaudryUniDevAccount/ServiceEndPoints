@@ -10,6 +10,6 @@ if (isset($_POST["points"])) {
 
     $stringObject = json_decode(stripslashes($stringJSON));
 
-     echo $stringObject->cop;
+     echo $stringObject;
 
 }
