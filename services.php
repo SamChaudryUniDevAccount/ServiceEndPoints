@@ -13,7 +13,7 @@ if (isset($_POST["points"])) {
 
 //    $points = json_decode("{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
 
-    echo "comparison: ".$_POST["points"]=="{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}";
+    echo "comparison: ".($_POST["points"]=="{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
 
     //echo $_POST["points"];
 
@@ -28,3 +28,4 @@ if (isset($_POST["points"])) {
 }
 
 ?>
+
