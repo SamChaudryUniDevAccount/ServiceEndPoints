@@ -34,8 +34,8 @@ $("#postData").click(function(){
      }
 
 
-     var data = JSON.stringify(jsonObject);
-
+     //var data = JSON.stringify(jsonObject);
+    var data=jsonObject;
      alert("" + data);
     // console.log(data);
 
@@ -47,9 +47,9 @@ $("#postData").click(function(){
 
     $.ajax({
 
-        url: 'services.php',
-        type: 'POST',
-        data: {"points" : JSON.stringify(data)},
+        "url": 'services.php',
+        "type": 'POST',
+        "data": {"points" : data},
         success: function(data) {
 
         // Do something with data that came back.
