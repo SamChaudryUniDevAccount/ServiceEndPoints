@@ -28,15 +28,26 @@ if (isset($_POST["points"])) {
    // echo $points;
 
 
-
-    echo $points->cop;
-
-    //foreach ($points as $key=>$value){
-
-      //  echo $key.":".$value."\n";
+    $cop;
 
 
-    //}
+
+    foreach ($points as $key=>$value){
+
+        if($key =='cop'){
+
+            $cop += $value;
+
+
+        }
+
+
+        echo "Best TV cop is...".$cop;
+
+        //echo $key.":".$value."\n";
+
+
+    }
 }
 
 ?>
