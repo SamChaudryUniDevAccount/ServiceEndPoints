@@ -11,13 +11,23 @@ if (isset($_POST["points"])) {
 
     echo "decode result: ".$points;
 
+    echo "is array: ".is_array($points);
+
+    echo "is object: ".is_object($points);
+
+
 //    $points = json_decode("{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
 
-    echo "comparison: ".($_POST["points"]=="{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
+//    echo "comparison: ".($_POST["points"]=="{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
 
     //echo $_POST["points"];
 
    // echo $points;
+
+
+
+
+
 
     foreach ($points as $key=>$value){
 
