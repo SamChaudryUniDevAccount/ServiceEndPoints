@@ -29,15 +29,14 @@ if (isset($_POST["points"])) {
 
 
 
+    echo $points->cop;
+
+    //foreach ($points as $key=>$value){
+
+      //  echo $key.":".$value."\n";
 
 
-
-    foreach ($points as $key=>$value){
-
-        echo $key.":".$value."\n";
-
-
-    }
+    //}
 }
 
 ?>
