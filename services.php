@@ -7,10 +7,10 @@ if (isset($_POST["points"])) {
 
 
 
-//    $points = json_decode($_POST["points"]);
+    $points = json_decode($_POST["points"],true);
 
 
-    $points = json_decode("{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
+//    $points = json_decode("{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
 
     //echo $_POST["points"];
 
