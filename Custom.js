@@ -35,12 +35,10 @@ $("#postData").click(function(){
 
 
      var data = JSON.stringify(jsonObject);
-     alert("" + data);
+
+
+    //alert("" + data);
     // console.log(data);
-
-
-
-
     //{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
 

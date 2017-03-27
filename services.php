@@ -10,13 +10,13 @@ if (isset($_POST["points"])) {
     $points = json_decode($_POST["points"],true);
 
 
-    echo "Type is".gettype($points);
+  //  echo "Type is".gettype($points);
 
-    echo "decode result: ".$points;
+  //  echo "decode result: ".$points;
 
-    echo "is array: ".is_array($points);
+  //  echo "is array: ".is_array($points);
 
-    echo "is object: ".is_object($points);
+  //  echo "is object: ".is_object($points);
 
 
 //    $points = json_decode("{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
