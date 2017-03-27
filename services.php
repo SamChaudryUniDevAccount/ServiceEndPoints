@@ -11,7 +11,7 @@ if (isset($_POST["points"])) {
 
     foreach ($points as $key => $value) {
 
-        echo $key;
+        echo "We are in the for loop".$key;
     }
 
 
