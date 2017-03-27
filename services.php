@@ -8,7 +8,7 @@ if (isset($_POST["points"])) {
     ////echo $points->cop; Not working...
 
 
-    $points = json_decode($_POST["points"],true);
+    $points = json_decode($_POST["points"]);
 
     echo $points['cop'];
 
