@@ -14,7 +14,7 @@ if (isset($_POST["points"])) {
 
   //  echo "decode result: ".$points;
 
-  //  echo "is array: ".is_array($points);
+     echo "is array: ".is_array($points);
 
   //  echo "is object: ".is_object($points);
 
@@ -34,9 +34,9 @@ if (isset($_POST["points"])) {
 
     foreach ($points as $key=>$value){
 
-        if($key =='cop'){
+        if($key =="cop"){
 
-            $cop += $value;
+            $cop = $value;
 
 
         }
