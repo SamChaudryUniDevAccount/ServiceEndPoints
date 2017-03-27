@@ -5,11 +5,13 @@ if (isset($_POST["points"])) {
 
     /// $points echo {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
+    ////echo $points->cop; Not working...
 
 
-    $points = json_decode('{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}');
+    $points = json_decode($_POST["points"]);
 
-    echo $points->cop;
+    echo $_POST["points"];
+    echo $points["cop"];
 
 
 
