@@ -34,8 +34,7 @@ $("#postData").click(function(){
      }
 
 
-     //var data = JSON.stringify(jsonObject);
-    var data=jsonObject;
+     var data = JSON.stringify(jsonObject);
      alert("" + data);
     // console.log(data);
 
