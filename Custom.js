@@ -54,9 +54,9 @@ $("#postData").click(function(){
 
         // Do something with data that came back.
 
-       alert(data);
+          alert(data);
 
-    }
+        }
 
 });
 
