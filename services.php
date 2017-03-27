@@ -9,10 +9,11 @@ if (isset($_POST["points"])) {
 
     $points = json_decode($_POST["points"],true);
 
+    echo "decode result: ".$points;
 
 //    $points = json_decode("{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
 
-    echo $_POST["points"]=="{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}";
+    echo "comparison: ".$_POST["points"]=="{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}";
 
     //echo $_POST["points"];
 
