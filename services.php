@@ -10,7 +10,8 @@ if (isset($_POST["points"])) {
 
     $points = json_decode($_POST["points"],true);
 
-    echo "From server...".$points;
+    echo $points["cop"];
+
 
 
 
