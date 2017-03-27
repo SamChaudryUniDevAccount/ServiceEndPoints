@@ -2,10 +2,20 @@
 if (isset($_POST["points"])) {
 
     // Decode our JSON into PHP objects we can use
-    ///{"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
+    /// $points echo {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
+    ////echo $points->cop; Not working
+
 
     $points = json_decode($_POST["points"],true);
 
-     echo $points->cop;
+
+    foreach ($points as $key => $value) {
+
+        echo $key;
+    }
+
+
+
+
 
 }
