@@ -9,9 +9,9 @@ if (isset($_POST["points"])) {
 
     $points = json_decode($_POST["points"]);
 
-    echo $_POST["points"];
+    //echo $_POST["points"];
 
-    echo $points;
+   // echo $points;
 
     foreach ($points as $key=>$value){
 
