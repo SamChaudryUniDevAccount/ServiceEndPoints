@@ -9,6 +9,9 @@ if (isset($_POST["points"])) {
 
     $points = json_decode($_POST["points"],true);
 
+
+    echo "Type is".gettype($points);
+
     echo "decode result: ".$points;
 
     echo "is array: ".is_array($points);
