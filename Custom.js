@@ -36,7 +36,7 @@ $("#postData").click(function(){
 
      var data = JSON.stringify(jsonObject);
 
-     alert("Client side..." + data);
+     alert("" + data);
     // console.log(data);
 
 
