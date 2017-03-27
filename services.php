@@ -5,32 +5,12 @@ if (isset($_POST["points"])) {
 
     /// $points echo {"cop":"John Mclane","airman":"Maverick","wing":"Iceman","rock":"Rocky Balboa"}
 
-
+    //is_array checks if it is an array // echo "is array: ".is_array($points);
 
     $points = json_decode($_POST["points"],true);
 
 
-  //  echo "Type is".gettype($points);
-
-  //  echo "decode result: ".$points;
-
-     echo "is array: ".is_array($points);
-
-  //  echo "is object: ".is_object($points);
-
-
-//    $points = json_decode("{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
-
-//    echo "comparison: ".($_POST["points"]=="{\"cop\":\"John Mclane\",\"airman\":\"Maverick\",\"wing\":\"Iceman\",\"rock\":\"Rocky Balboa\"}");
-
-    //echo $_POST["points"];
-
-   // echo $points;
-
-
     $cop;
-
-
 
     foreach ($points as $key=>$value){
 
@@ -41,13 +21,14 @@ if (isset($_POST["points"])) {
 
         }
 
-
-        echo "Best TV cop is...".$cop;
-
         //echo $key.":".$value."\n";
-
-
     }
+
+    //Outside of the mian loop
+
+    echo "Best TV cop is...".$cop;
+
+
 }
 
 ?>
