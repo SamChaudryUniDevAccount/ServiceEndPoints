@@ -9,7 +9,6 @@ if (isset($_POST["points"])) {
 
     $points = json_decode($_POST["points"],true);
 
-
     $cop;
 
     foreach ($points as $key=>$value){
@@ -24,9 +23,36 @@ if (isset($_POST["points"])) {
         //echo $key.":".$value."\n";
     }
 
-    //Outside of the mian loop
+    //Outside of the main loop below works
 
     echo "Best TV cop is...".$cop;
+
+
+
+    //Update my table via SQL query
+    //$sql = "UPDATE * FROM moviestars WHERE username = '$cop' and airman = '$airman'";
+
+    //if ($result = mysqli_query($link,$sql))
+    //{
+       // $count = mysqli_num_rows($result);
+     //   echo $count;
+
+   // }
+    //else{
+
+      //  echo "ERROR Something not working!";
+
+    //}
+
+
+   // if($count > 1) {
+
+     //   return true;
+
+   // }else {
+
+   //     return false;
+ //   }
 
 
 }
