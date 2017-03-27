@@ -13,8 +13,12 @@ if (isset($_POST["points"])) {
 
     echo $points;
 
+    foreach ($points as $key=>$value){
+
+        echo $key.":".$value."\n";
 
 
+    }
 }
 
 ?>
